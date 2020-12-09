@@ -5,5 +5,11 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="com.kh.function.Example"/>
+<fullyQualifiedTypeName name="com.kh.test.condition.Test1"/>
+<fullyQualifiedTypeName name="com.kh.test.condition.Test2"/>
+<fullyQualifiedTypeName name="com.kh.test.condition.Test3"/>
+<fullyQualifiedTypeName name="com.kh.test.condition.Test4"/>
+<fullyQualifiedTypeName name="com.kh.test.condition.Test5"/>
+<fullyQualifiedTypeName name="com.kh.test.random.RandomTest"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
