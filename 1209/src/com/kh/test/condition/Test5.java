@@ -20,19 +20,20 @@ public class Test5 {
 		t5.test();
 		
 	}
+	//키랑 몸무게 double로 받았을경우
 	public void test(){
 		
-		double height, weight;
+		int height, weight;
 		double bmi;
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("키(cm)를 입력하세요 : ");
-		height = sc.nextDouble();
+		height = sc.nextInt();
 		
 		System.out.print("몸무게(kg)를 입력하세요 : ");
-		weight = sc.nextDouble();
+		weight = sc.nextInt();
 		
-		bmi = weight / ((height/100) * (height/100));
+		bmi = weight / ((height/100.0) * (height/100.0));
 		
 		if(bmi<18.5) {
 			System.out.println("저체중 (18.5미만)");
@@ -44,8 +45,6 @@ public class Test5 {
 			System.out.println("비만 (25이상 30미만)");
 		}else {
 			System.out.println("고도비만(30이상)");
-		}
-		
+		}		
 	}
-
 }
