@@ -13,7 +13,7 @@ public class RandomTest {
 	public void game() {
 		Scanner sc = new Scanner(System.in);
 		int temp;
-		int random = (int)(Math.random()*3);
+		int random = (int)(Math.random()*3)+1;
 		
 		System.out.println("=== 가위 바위 보 게임 ===");
 		System.out.print("숫자를 선택하세요 (1.가위 / 2.바위/ 3.보) : ");
