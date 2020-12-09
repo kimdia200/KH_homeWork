@@ -1,0 +1,13 @@
+
+public class Test123 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test123 t1 = new Test123();
+		t1.test1();
+	}
+	public void test1() {
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.kh.edu;
+
+public class TestJavaApi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

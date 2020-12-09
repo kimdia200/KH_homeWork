@@ -1,0 +1,5 @@
+package product.model.vo;
+
+public class Product {
+
+}

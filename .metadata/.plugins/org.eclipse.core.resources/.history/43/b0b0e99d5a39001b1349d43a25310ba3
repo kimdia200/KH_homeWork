@@ -1,0 +1,27 @@
+
+public class Test123 {
+
+	public static void main(String[] args) {
+		Test123 t1 = new Test123();
+		t1.test1();
+	}
+	public void test1() {
+		int a = 1;
+		int b = 2;
+		int c;
+		
+		boolean d;
+		
+		c = a++ + --b;
+		System.out.println("a = " + a + ", b = " + b + ", c = " + c);
+		
+		d = a-- == b++;
+		System.out.println();
+		
+				
+		
+		
+		
+	}
+
+}

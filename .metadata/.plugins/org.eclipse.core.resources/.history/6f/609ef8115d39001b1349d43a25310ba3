@@ -1,0 +1,37 @@
+
+public class Test123 {
+
+	public static void main(String[] args) {
+		Test123 t1 = new Test123();
+		t1.test2();
+	}
+	public void test1() {
+		int a = 1;
+		int b = 2;
+		int c;
+		
+		boolean d;
+		
+		c = a++ + --b;
+		System.out.println("a = " + a + ", b = " + b + ", c = " + c);
+		
+		d = a-- == b++;
+		System.out.println(d == true ? "True!!!" : "False!!!");
+		System.out.println("a = " + a + ", b = " + b);
+	}
+	 public void test2() {
+	        int a = 10;
+	        int b = ++a;
+	        int c = 4;
+	        int d = c++ +2;
+	        // 1번 문제
+	        System.out.println((a + c * d) - c % d);
+	        // 2번 문제
+	        System.out.println((boolean) (a != b));
+	        // 3번 문제
+	        c = 20;
+	        d = c++ + a-- * b;
+	        System.out.println("결과 = " + (c + a) + ", " + (d - 10));
+	    }
+
+}
