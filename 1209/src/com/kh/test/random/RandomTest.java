@@ -41,11 +41,11 @@ public class RandomTest {
 			System.out.println("비겼습니다.");
 		}
 		//이겼을때
-		if((temp==1&&random==3)||(temp==2&&random==1)||(temp==3&&random==2)) {
+		else if((temp==1&&random==3)||(temp==2&&random==1)||(temp==3&&random==2)) {
 			System.out.println("당신의 승리입니다~~~~~~!");
 		}
 		//졌을때 12 23 31
-		if((temp==1&&random==2)||(temp==2&&random==3)||(temp==3&&random==1)) {
+		else if((temp==1&&random==2)||(temp==2&&random==3)||(temp==3&&random==1)) {
 			System.out.println("당신의 패배입니다 ㅋㅋㅋㅋ");
 		}
 		
