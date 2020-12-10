@@ -42,16 +42,20 @@ public class Test4 {
 		System.out.print("검색할 문자 입력 : ");
 		ch = sc.nextLine().toLowerCase().charAt(0);
 		
-		if(!((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))) {
+		if(ch>='a'&&ch<='z') {
+			for(int i=0; i<temp.length() ; i++) {
+				if(temp.charAt(i)==ch)
+					count++;
+			}
+			System.out.println("'"+ch+"' 가포함된 갯수 : "+ count);
+			
+		}else {
 			System.out.println("영문자가 아닙니다.");
 			return;
 		}
 		
-		for(int i=0; i<temp.length() ; i++) {
-			if(temp.charAt(i)==ch)
-				count++;
-		}
-		System.out.println("'"+ch+"' 가포함된 갯수 : "+ count);
+		
+		
 	}
 
 }
