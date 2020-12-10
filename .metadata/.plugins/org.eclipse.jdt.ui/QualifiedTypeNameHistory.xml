@@ -11,5 +11,13 @@
 <fullyQualifiedTypeName name="com.kh.test.condition.Test4"/>
 <fullyQualifiedTypeName name="com.kh.test.condition.Test5"/>
 <fullyQualifiedTypeName name="com.kh.test.random.RandomTest"/>
+<fullyQualifiedTypeName name="com.kh.test.condition.Test8"/>
+<fullyQualifiedTypeName name="com.kh.test.condition.Test9"/>
+<fullyQualifiedTypeName name="com.kh.test.condition.SwitchTest1"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.kh.test.loop.Test1"/>
+<fullyQualifiedTypeName name="com.kh.test.loop.Test2"/>
+<fullyQualifiedTypeName name="com.kh.test.loop.Test3"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.kh.test.loop.Test4"/>
 </qualifiedTypeNameHistroy>
