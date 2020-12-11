@@ -7,7 +7,7 @@ import java.util.Scanner;
 - 클래스 : com.kh.test.loop.Test1.java
 - 메소드명 : public void test()
     1부터 사용자로부터 입력 받은 정수까지 존재하는 짝수의 합을 출력하세요. 
-    (for문 활용)
+    (for문 활용) - > while문으로 변경
 
  */
 public class Test1 {
@@ -25,8 +25,9 @@ public class Test1 {
 		System.out.print("정수입력 : ");
 		temp = sc.nextInt();
 		
-		for(int i = 1 ; i <= temp; i++) {
-			if(i %2 ==0)
+		int i =0;
+		while(++i<=temp) {
+			if(i%2 == 0 )
 				sum+=i;
 		}
 		System.out.println("1 ~ " + temp + " 까지 존재하는 짝수의 합 = " + sum);
