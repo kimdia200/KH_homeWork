@@ -18,6 +18,7 @@
 <fullyQualifiedTypeName name="com.kh.test.loop.Test1"/>
 <fullyQualifiedTypeName name="com.kh.test.loop.Test2"/>
 <fullyQualifiedTypeName name="com.kh.test.loop.Test3"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.kh.test.loop.Test4"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
