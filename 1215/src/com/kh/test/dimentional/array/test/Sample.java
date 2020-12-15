@@ -42,14 +42,13 @@ public class Sample {
 		System.out.println("문제 해결뒤 ");
 		for(int i=0; i<arr.length; i++) {
 			for(int j=0; j<arr[i].length; j++) {
-				//한자리 수가나왔을대 이쁘게 맞춰주려고 작성
-				if(arr[i][j]==0 || sum[i]%5!=0) {
+				if(sum[i]%5!=0) {
 					System.out.print("[  ]");
 					continue;
 				}				
 				else if(sum[i]%5==0&&arr[i][j]>=10)
 					System.out.print("["+arr[i][j]+"]");
-				else
+				else //한자리 수가나왔을대 이쁘게 맞춰주려고 작성
 					System.out.print("[ "+arr[i][j]+"]");
 			}
 			System.out.println(" ==> sum : "+sum[i] );
