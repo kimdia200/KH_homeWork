@@ -230,3 +230,4 @@ java.io.IOException: Creating directories for C:\WINDOWS\system32\config\systemp
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_275]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_275]
 	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_275]
+2020-12-14 23:21:59,221 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
