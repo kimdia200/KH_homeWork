@@ -20,7 +20,8 @@
 <fullyQualifiedTypeName name="com.kh.test.loop.Test4"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="kh.java.test.array.Test1"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.kh.test.nested.loop.Test1"/>
 </qualifiedTypeNameHistroy>
