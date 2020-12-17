@@ -36,22 +36,16 @@ public class EmpTest {
 			System.out.println("********************************************");
 			System.out.print("메뉴 번호 입력 : ");
 			
-			//이걸 안하면 최초실행시 3번 실행하면 출력됨
-			e=null;
-			
 			input = sc.nextInt();
 			
 			if(input==1) {
-				e = new Employee();
 				e.empInput();
 				continue;
 			}else if(input ==2) {
-				if(e!=null)
-					e=null;
+				e=null;
 				continue;
 			}else if(input ==3) {
-				if(e!=null)
-					e.empOutPut();
+				e.empOutPut();
 				continue;
 			}else if(input ==9) {
 				System.out.println(".프로그램 종료.");
