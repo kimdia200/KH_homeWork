@@ -22,6 +22,7 @@
 <fullyQualifiedTypeName name="kh.java.test.array.Test1"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.kh.test.nested.loop.Test1"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.oop.emp.model.Employee"/>
 </qualifiedTypeNameHistroy>
