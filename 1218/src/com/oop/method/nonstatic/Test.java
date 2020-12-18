@@ -1,0 +1,24 @@
+package com.oop.method.nonstatic;
+
+public class Test {
+
+	public static void main(String[] args) {
+		NonStaticSample s = new NonStaticSample();
+		
+//		로또번호 6개 출력해주는 메소드 작동!
+		s.printLottoNumbers();
+		System.out.println();
+		
+		//입력만 숫자만큼 입력한 문자열을 출력해주는 메소드 작동!
+		s.outPutChar(5, 'A');
+		System.out.println();
+
+		//임의의 알파벳을 생성해서 리턴하는 메소드 작동!
+		System.out.println("랜덤알파벳 : "+s.alphabet());
+		System.out.println();
+		
+		//mySubString 메소드 작동!
+		System.out.println(s.mySubString("김윤수", 0, 2));
+	}
+
+}

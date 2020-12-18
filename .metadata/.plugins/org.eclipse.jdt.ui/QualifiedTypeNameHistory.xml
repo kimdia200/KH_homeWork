@@ -25,4 +25,7 @@
 <fullyQualifiedTypeName name="com.kh.test.nested.loop.Test1"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.oop.emp.model.Employee"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.oop.method.static_.StaticMethod"/>
+<fullyQualifiedTypeName name="com.oop.method.nonstatic.NonStaticSample"/>
 </qualifiedTypeNameHistroy>
