@@ -25,7 +25,7 @@ public class EmpTest {
 		
 		Scanner sc = new Scanner(System.in);
 		int input;
-		Employee e = new Employee();
+		Employee e = null;
 
 		while(true) {
 			System.out.println("************* 사원 정보 관리 프로그램 ************");
@@ -39,13 +39,16 @@ public class EmpTest {
 			input = sc.nextInt();
 			
 			if(input==1) {
+				e=new Employee();
 				e.empInput();
 				continue;
 			}else if(input ==2) {
-				e=null;
+				if(e==null) System.out.println("지울 정보가 없습니다.");
+				else e=null;
 				continue;
 			}else if(input ==3) {
-				e.empOutPut();
+				if(e == null) System.out.println("출력할 정보가 없습니다.");
+				else e.empOutPut();
 				continue;
 			}else if(input ==9) {
 				System.out.println(".프로그램 종료.");
