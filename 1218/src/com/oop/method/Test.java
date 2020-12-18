@@ -3,52 +3,60 @@ package com.oop.method;
 public class Test {
 	int a = 100;
 	static int s = 99;
+	int b=0;
 
 	public static void main(String[] args) {
-		Test t = new Test();
-		t.test1();
+		Test t1 = new Test();
+		t1.test1();
 		//100
 		//99
 
-		t.test2();
+		t1.test2();
 		//100
 
 		Test t3 = new Test();
-		t.test3(t3);
+		//t1.a=200, t3.a = 10 으로 각각 변경됨
+		t1.test3(t3);
 		//10
-		//t3의 a값은 10으로 변경되었음
-		
 		System.out.println(t3.a);
 		//10
 
-		t.test4(t);
+		t1.test4(t1);
 		//1000
-		
-
 	}
-
+	
+	//parameter 없음
 	public void test1() {
-		int a = 1000; //call by value, call by reference 전혀 상관없음
-		int s = 999; //call by value, call by reference 전혀 상관없음
-		System.out.println(this.a); //100(호출한 클래스의 a)
+		int a = 1000; 
+		int s = 999;
+		System.out.println("----test1----");
+		System.out.println(this.a); //100(this.a = 호출한 클래스의 a값 = t.a)
 		System.out.println(Test.s); //99(static 값)
 	}
-
+	
+	//parameter없음
 	public void test2() {
+		System.out.println("----test2----");
 		Test t = new Test();
 		t.a = 1000; //새로 생성한 클래스 t의 a값 1000
-		//call by value, call by reference 전혀 상관없음
-		System.out.println(a);//100(호출한 클래스의 a)
+		System.out.println(a);//100(a=this.a로서 호출한 클래스(t1)의 field a값)
 	}
-
+	
+	//call by reference method
+	//main에서의 parameter  = t3
 	public void test3(Test t) {
+		System.out.println("----test3----");
 		t.a = 10; //(call by reference로 메소드를 탈출해도 변경된 값이 유지)
-		this.a = 200; //필드값 a를 200으로 직접 수정
-		System.out.println(t.a);//10
+				//인자로 Test t3이 사용 되었으므로 t3.a = 10이 된다
+		this.a = 200; // this.a = 호출한 클래스의 a값 = t1.a = 200으로 변경
+		System.out.println(t.a);//10(t3.a)
 	}
-
+	
+	//call by reference method
+	//main에서의 parameter = t1
 	public void test4(Test t) {
-		t.a = 1000;  //(call by reference로 메소드를 탈출해도 변경된 값이 유지)
-		System.out.println(this.a);//1000
+		System.out.println("----test4----");
+		t.a = 1000;  //t.a = t1.a = (200 -> 1000) (call by reference로 메소드를 탈출해도 변경된 값이 유지)
+		System.out.println(this.a);//1000(this.a = 호출한 클래스의 a값 = t1.a)
 	}
 }

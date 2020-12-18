@@ -28,4 +28,5 @@
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.oop.method.static_.StaticMethod"/>
 <fullyQualifiedTypeName name="com.oop.method.nonstatic.NonStaticSample"/>
+<fullyQualifiedTypeName name="com.oop.method.Test"/>
 </qualifiedTypeNameHistroy>
