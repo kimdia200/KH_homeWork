@@ -11,6 +11,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\kimYS\Desktop\Git\Test\1218_2"/>
 			<item value="C:\Users\kimYS\Desktop\Git\KH_HomeWork"/>
 			<item value="C:\workSpaces\hw2\hw1207"/>
 		</list>
