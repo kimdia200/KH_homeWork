@@ -29,4 +29,8 @@
 <fullyQualifiedTypeName name="com.oop.method.static_.StaticMethod"/>
 <fullyQualifiedTypeName name="com.oop.method.nonstatic.NonStaticSample"/>
 <fullyQualifiedTypeName name="com.oop.method.Test"/>
+<fullyQualifiedTypeName name="com.oop.employee.model.vo.Employee"/>
+<fullyQualifiedTypeName name="com.oop.movie.model.entity.Movie"/>
+<fullyQualifiedTypeName name="java.util.Calendar.Builder"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
 </qualifiedTypeNameHistroy>

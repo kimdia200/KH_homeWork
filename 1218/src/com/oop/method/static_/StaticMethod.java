@@ -14,6 +14,8 @@ public class StaticMethod {
     //메소드명 : setChar(String, int, char)
 	//String값은 immutable Class라서 원본 값이 변경될 수 없다
 	//혹시 문제가  변경처리한 문자열을 리턴하는거라면
+	
+	//********************** 강사님이 문제 잘못적었다고 String 타입 리턴 하는 메소드가 맞다고함 
 	public static String setChar(String s, int index, char ch) {
 		return s.substring(0,index)+ch+s.substring(index+1);
 	}

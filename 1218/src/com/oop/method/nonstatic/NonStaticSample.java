@@ -37,7 +37,6 @@ public class NonStaticSample {
 							// 0번~(i-1)번 인덱스 까지 검사하는 반복문을 종료
 							break;
 						}
-						
 						//j == (i-1)일 때 break 되지 않아 아래 조건문이 실행된다 = 중복값이 없음
 						if(j==(i-1)) {
 							//난수 부여

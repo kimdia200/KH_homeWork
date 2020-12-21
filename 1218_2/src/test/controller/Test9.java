@@ -17,8 +17,12 @@ public class Test9 {
 				{82, 10, 12, 61},
 				{14, 16, 18, 78},
 				{45, 26, 72, 23}};
+		
 		min = arr[0][0];
 		max = arr[0][0];
+		//∞≠ªÁ¥‘¿∫ max = Integer.Min_Value;
+		//∞≠ªÁ¥‘¿∫ min = Integer.Max_Value;
+		
 		for(int i=0; i<arr.length; i++) {
 			for(int j=0; j<arr[i].length; j++) {
 				if(min>arr[i][j])
