@@ -8,7 +8,7 @@ package test.controller;
  * @author kimYS
  *
  */
-public class Test9 {
+public class Test99 {
 
 	public static void main(String[] args) {
 
@@ -17,8 +17,10 @@ public class Test9 {
 				{82, 10, 12, 61},
 				{14, 16, 18, 78},
 				{45, 26, 72, 23}};
+		
 		min = arr[0][0];
 		max = arr[0][0];
+		
 		for(int i=0; i<arr.length; i++) {
 			for(int j=0; j<arr[i].length; j++) {
 				if(min>arr[i][j])

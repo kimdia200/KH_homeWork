@@ -16,7 +16,7 @@ public class Test3 {
 		while(i<=100) {
 			sum += i++;
 		}
-		avg=sum/100.0;
+		avg=(double)sum/(i-1);
 		System.out.println("ÇÕ°è : "+sum);
 		System.out.println("Æò±Õ : "+avg);
 	}
