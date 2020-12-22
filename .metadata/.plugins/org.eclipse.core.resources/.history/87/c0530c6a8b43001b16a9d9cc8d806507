@@ -1,0 +1,12 @@
+package com.oop.movie.model.entity;
+
+public class MovieRun {
+
+	public static void main(String[] args) {
+		Movie m1 = new Movie("매트릭스1");
+		Movie m2 = new Movie("매트릭스2", "워쇼스키");
+		Movie m3 = new Movie("매트릭스3", "워쇼스키", {"키아누 리브스","캐리앤 모스","로런스 피시번","휴고 위빙","제이다 핑킷 스미스"});
+		
+	}
+
+}

@@ -1,0 +1,36 @@
+package com.oop.emp.model;
+
+/**
+ * 
+ * @author 김윤수
+ *    - 사원정보 관리용 클래스
+    - Field 작성 : 캡슐화 반드시 적용함
+    사번 : - empNo:int
+    이름 : - empName:String
+    소속부서 : - dept:String
+    직급 : - job:String
+    나이 : - age:int
+    성별 : - gender:char
+    급여 : - salary:int
+    보너스포인트 : - bonusPoint:double
+    핸드폰 : - phone:String
+    주소 : - address:String
+    
+Employee 클래스의 메소드 작성
+1. 키보드입력용 메소드 : empInput()
+2. emp객체 모든 필드 출력용 메소드 : empOutput()
+3. getter/setter메소드
+ */
+public class Employee {
+	private int empNo;
+	private  String empName;
+	private  String dept;
+	private String job;
+	private int age;
+	private char gender;
+	private int salary;
+	private double bonusPoint;
+	private String phone;
+	private String address;
+
+}

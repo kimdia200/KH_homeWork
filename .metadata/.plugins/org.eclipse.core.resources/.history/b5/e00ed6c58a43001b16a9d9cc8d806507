@@ -1,0 +1,9 @@
+package com.oop.movie.model.entity;
+
+public class Run {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.oop.coffee.controller;
+
+public class CoffeeManager {
+
+}

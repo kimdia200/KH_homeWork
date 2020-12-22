@@ -1,0 +1,17 @@
+package com.oop.method.nonstatic;
+
+public class Test {
+
+	public static void main(String[] args) {
+		NonStaticSample s = new NonStaticSample();
+		
+//		로또번호 6개 출력해주는 메소드 작동!
+		s.printLottoNumbers();
+		System.out.println();
+		
+		s.outPutChar(5, 'A');
+
+		System.out.println(s.alphabet());
+	}
+
+}

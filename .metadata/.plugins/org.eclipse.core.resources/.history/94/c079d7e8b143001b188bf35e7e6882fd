@@ -1,0 +1,22 @@
+package com.oop.coffee.controller;
+/**
+ *  - Coffee 멤버변수 원산지 origin, 지역 location
+      기본생성자, 모든필드초기화생성자
+      getter, setter
+      출력메소드      ()
+ * @author family
+ *
+ */
+public class CoffeeManager {
+	String origin;
+	String location;
+	
+	
+	public CoffeeManager() {
+		
+	}
+	public CoffeeManager(String origin, String location) {
+		this.origin = origin;
+		this.location = location;
+	}
+}

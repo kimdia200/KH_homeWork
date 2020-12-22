@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;input&apos; in &apos;kh.java.test.array.Test3.main(...)&apos; to &apos;input1&apos;&#x0D;&#x0A;- Original project: &apos;1214&apos;&#x0D;&#x0A;- Original element: &apos;kh.java.test.array.Test3.main(String[]).input&apos;&#x0D;&#x0A;- Renamed element: &apos;input&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;input&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;kh.java.test.array{Test3.java[Test3~main~\[QString;@input!402!414!409!413!QString;!0!false" name="input1" references="true" stamp="1607951420763" version="1.0"/>
+</session>

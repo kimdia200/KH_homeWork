@@ -1,0 +1,14 @@
+package com.oop.method.static_;
+
+public class Run {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a = "010";
+		StaticMethod.setChar(a, 1, '2');
+		System.out.println(a.subSequence(0, 1));
+		System.out.println(a.substring(1,2));
+		System.out.println(a);
+	}
+
+}

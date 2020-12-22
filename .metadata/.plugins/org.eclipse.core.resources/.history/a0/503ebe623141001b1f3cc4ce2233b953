@@ -1,0 +1,20 @@
+package com.oop.method.static_;
+
+public class Run {
+
+	public static void main(String[] args) {
+		
+		String a = "abcdef";
+		System.out.println("기존값 : "+a);
+		a=StaticMethod.toUpper(a);
+		System.out.println("upper적용 : "+a);
+//		a=StaticMethod.setChar(a, 1, '2');
+		StaticMethod.setChar(a, 1, '2');
+		
+		System.out.println("setChar적용 : "+a);
+		
+		System.out.println("알파벳의 갯수 : "+StaticMethod.getAlphabetLength(a));
+		
+	}
+
+}

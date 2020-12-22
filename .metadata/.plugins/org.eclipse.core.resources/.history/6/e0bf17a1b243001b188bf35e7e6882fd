@@ -1,0 +1,45 @@
+package com.oop.coffee.model.dto;
+/**
+ * control클래스 구현내용.
+    1. Coffee 클래스에 대한 객체 배열(세계3대커피정보) 선언함. 배열크기 3.
+    2. 사용자에게 키보드로 세계3대 커피정보를 입력받아, 각 객체에 기록함
+    3. 출력 확인함
+    <세계3대커피>
+    ---------------------------
+    원산지           지역
+    ---------------------------
+    예멘          모카마타리
+    자메이카       블루마운틴
+    하와이           코나
+    ---------------------------
+ * @author family
+ *
+ */
+public class Coffee {
+	String origin;
+	String location;
+	
+	
+	public Coffee() {
+		
+	}
+	public Coffee(String origin, String location) {
+		this.origin = origin;
+		this.location = location;
+	}
+	
+	
+	public String getOrigin() {
+		return origin;
+	}
+	public void setOrigin(String origin) {
+		this.origin = origin;
+	}
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	
+}
