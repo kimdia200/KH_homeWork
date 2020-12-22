@@ -23,7 +23,6 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="com.kh.test.nested.loop.Test1"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.oop.emp.model.Employee"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.oop.method.static_.StaticMethod"/>
@@ -33,4 +32,7 @@
 <fullyQualifiedTypeName name="com.oop.movie.model.entity.Movie"/>
 <fullyQualifiedTypeName name="java.util.Calendar.Builder"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="com.oop.coffee.model.dto.Coffee"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.oop.coffee.controller.CoffeeManager"/>
 </qualifiedTypeNameHistroy>
