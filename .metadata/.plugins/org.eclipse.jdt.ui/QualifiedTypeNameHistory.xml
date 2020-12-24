@@ -35,4 +35,5 @@
 <fullyQualifiedTypeName name="com.oop.coffee.model.dto.Coffee"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.oop.coffee.controller.CoffeeManager"/>
+<fullyQualifiedTypeName name="kh.java.inherit.shape.Rectangle"/>
 </qualifiedTypeNameHistroy>
