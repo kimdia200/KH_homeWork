@@ -11,6 +11,6 @@ public class Silver extends Member {
 	}
 	@Override
 	public double getBonusPoint() {
-		return super.getBonusPoint()*0.02;
+		return super.getPoint()*0.02;
 	}
 }
