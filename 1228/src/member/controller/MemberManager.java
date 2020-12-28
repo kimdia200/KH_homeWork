@@ -1,10 +1,6 @@
 package member.controller;
 
-import member.model.vo.Gold;
 import member.model.vo.Member;
-import member.model.vo.Silver;
-import member.model.vo.Vip;
-import member.model.vo.Vvip;
 
 public class MemberManager {
 	
@@ -13,20 +9,23 @@ public class MemberManager {
 	
 	private int mLastIndex =0;
 
-	
-	
-	public void insertMember(Silver s) {
-		member[mLastIndex++]=s;
+	//规过1
+	public void insertMember(Member m) {
+		member[mLastIndex++]=m;
 	}
-	public void insertMember(Gold g) {
-		member[mLastIndex++]=g;
-	}
-	public void insertMember(Vip v) {
-		member[mLastIndex++]=v;
-	}
-	public void insertMember(Vvip vv) {
-		member[mLastIndex++]=vv;
-	}
+	//规过2
+//	public void insertMember(Silver s) {
+//		member[mLastIndex++]=s;
+//	}
+//	public void insertMember(Gold g) {
+//		member[mLastIndex++]=g;
+//	}
+//	public void insertMember(Vip v) {
+//		member[mLastIndex++]=v;
+//	}
+//	public void insertMember(Vvip vv) {
+//		member[mLastIndex++]=vv;
+//	}
 	
 	public void printData() {
 		System.out.println();
