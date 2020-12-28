@@ -19,7 +19,8 @@ public class MemberManager {
 	
 	
 	public void silverInsert(Silver s) {
-		silver[sLastIndex++]=s;
+//		s=ȫ�浿, silver, 1000
+		silver[sLastIndex++]=s;		
 	}
 	public void goldInsert(Gold g) {
 		gold[gLastIndex++]=g;

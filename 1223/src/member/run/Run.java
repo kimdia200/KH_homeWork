@@ -12,20 +12,23 @@ public class Run {
 
 		MemberManager m = new MemberManager();
 		
-		m.silverInsert(new Silver("È«±æµ¿", "Silver",1000));
-        m.silverInsert(new Silver("±è¸»¶Ë", "Silver",2000));
+		Silver s = new Silver("È«±æµ¿", "silver", 1000);
+		Silver s1 = new Silver("±è¸»¶Ë", "silver", 3000);
+		
+		m.silverInsert(s);
+        m.silverInsert(s1);
         m.silverInsert(new Silver("°í±æµ¿", "Silver",3000));
         m.goldInsert(new Gold("±èÈ¸Àå", "Gold",1000));
         m.goldInsert(new Gold("ÀÌÈ¸Àå", "Gold",2000));
         m.goldInsert(new Gold("¿ÀÈ¸Àå", "Gold",3000));
+     
         //vipÃß°¡
         m.vipInsert(new Vip("ÃÖ¼ø½Ç", "Vip",10000));
+        
         //vvipÃß°¡
         m.vvipInsert(new Vvip("¹Ú±ÙÇı", "VVip",100000));
 
         m.printData();
-
-		
 	}
 
 }

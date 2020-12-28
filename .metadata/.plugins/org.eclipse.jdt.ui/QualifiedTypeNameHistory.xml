@@ -36,4 +36,12 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.oop.coffee.controller.CoffeeManager"/>
 <fullyQualifiedTypeName name="kh.java.inherit.shape.Rectangle"/>
+<fullyQualifiedTypeName name="member.model.vo.Member"/>
+<fullyQualifiedTypeName name="member.model.vo.Gold"/>
+<fullyQualifiedTypeName name="javax.xml.bind.util.ValidationEventCollector"/>
+<fullyQualifiedTypeName name="member.model.vo.Vip"/>
+<fullyQualifiedTypeName name="member.model.vo.Vvip"/>
+<fullyQualifiedTypeName name="member.controller.MemberManager"/>
+<fullyQualifiedTypeName name="member.run.Run"/>
+<fullyQualifiedTypeName name="member.model.vo.Silver"/>
 </qualifiedTypeNameHistroy>
