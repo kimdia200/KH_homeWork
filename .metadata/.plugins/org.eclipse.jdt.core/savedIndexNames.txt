@@ -32,5 +32,4 @@ INDEX VERSION 1.131+C:\Users\kimYS\Desktop\Git\KH_HomeWork\.metadata\.plugins\or
 4277002233.index
 2857089451.index
 78366250.index
-3893833638.index
 3023916275.index

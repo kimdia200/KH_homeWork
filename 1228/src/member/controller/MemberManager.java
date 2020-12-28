@@ -9,11 +9,11 @@ public class MemberManager {
 	
 	private int mLastIndex =0;
 
-	//¹æ¹ı1
+	//ï¿½ï¿½ï¿½1
 	public void insertMember(Member m) {
 		member[mLastIndex++]=m;
 	}
-	//¹æ¹ı2
+	//ï¿½ï¿½ï¿½2
 //	public void insertMember(Silver s) {
 //		member[mLastIndex++]=s;
 //	}
@@ -29,8 +29,8 @@ public class MemberManager {
 	
 	public void printData() {
 		System.out.println();
-		System.out.println("=========================<<È¸¿øÁ¤º¸>>==========================");
-		System.out.println("ÀÌ¸§                               µî±Ş                              Æ÷ÀÎÆ®                         ÀÌÀÚÆ÷ÀÎÆ®");
+		System.out.println("=========================<<íšŒì›ëª©ë¡>>==========================");
+		System.out.println("ì´ë¦„                               ë“±ê¸‰                              í¬ì¸íŠ¸                        ë³´ë„ˆìŠ¤í¬ì¸íŠ¸");
 		System.out.println("=============================================================");
 		if(mLastIndex!=0) {
 			for(int i=0; i<mLastIndex; i++) {

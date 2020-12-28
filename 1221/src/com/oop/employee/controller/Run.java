@@ -7,8 +7,8 @@ public class Run {
 	public static void main(String[] args) {
 		
 		Employee e1 = new Employee();
-		Employee e2 = new Employee(1, "È«±æµ¿", '³²', "010-7777-7777");
-		Employee e3 = new Employee(2, "À¯°ü¼ø", '¿©', "010-3131-3131","¿µ¾÷ºÎ", 3000000, 0.15);
+		Employee e2 = new Employee(1, "È«ï¿½æµ¿", 'ã…', "010-7777-7777");
+		Employee e3 = new Employee(2, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 'ã…‡', "010-3131-3131","ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 3000000, 0.15);
 		
 		e1.printEmployee();
 		e2.printEmployee();

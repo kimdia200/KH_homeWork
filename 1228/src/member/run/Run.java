@@ -10,14 +10,14 @@ public class Run {
     public static void main(String[] args)
     {
         MemberManager mgr = new MemberManager();
-        mgr.insertMember(new Silver("È«±æµ¿", "Silver",1000));
-        mgr.insertMember(new Silver("°í±æµ¿", "Silver",2000));
-        mgr.insertMember(new Silver("È«µ¿¹Î", "Silver",3000));
-        mgr.insertMember(new Gold("±èÈ¸Àå", "Gold",1000));
-        mgr.insertMember(new Gold("ÀÌÈ¸Àå", "Gold",2000));
-        mgr.insertMember(new Gold("¿ÀÈ¸Àå", "Gold",3000));
-        mgr.insertMember(new Vip("ÀÌ¼ø½Å", "Vip",10000));
-        mgr.insertMember(new Vvip("½Å»çÀÓ´ç", "VVip",100000));
+        mgr.insertMember(new Silver("ê¹€ìœ¤ìˆ˜1", "Silver",1000));
+        mgr.insertMember(new Silver("ê¹€ìœ¤ìˆ˜2", "Silver",2000));
+        mgr.insertMember(new Silver("ê¹€ìœ¤ìˆ˜3", "Silver",3000));
+        mgr.insertMember(new Gold("ê¹€ìœ¤ìˆ˜4", "Gold",1000));
+        mgr.insertMember(new Gold("ê¹€ìœ¤ìˆ˜5", "Gold",2000));
+        mgr.insertMember(new Gold("ê¹€ìœ¤ìˆ˜6", "Gold",3000));
+        mgr.insertMember(new Vip("ê¹€ìœ¤ìˆ˜7", "Vip",10000));
+        mgr.insertMember(new Vvip("ê¹€ìœ¤ìˆ˜8", "VVip",100000));
         mgr.printData();
     }
 }

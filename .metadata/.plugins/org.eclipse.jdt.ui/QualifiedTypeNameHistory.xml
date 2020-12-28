@@ -44,4 +44,8 @@
 <fullyQualifiedTypeName name="member.controller.MemberManager"/>
 <fullyQualifiedTypeName name="member.run.Run"/>
 <fullyQualifiedTypeName name="member.model.vo.Silver"/>
+<fullyQualifiedTypeName name="com.oop.body.model.Body"/>
+<fullyQualifiedTypeName name="com.oop.body.controller.ActionBody"/>
+<fullyQualifiedTypeName name="com.oop.body.model.Head"/>
+<fullyQualifiedTypeName name="com.oop.body.model.Leg"/>
 </qualifiedTypeNameHistroy>
