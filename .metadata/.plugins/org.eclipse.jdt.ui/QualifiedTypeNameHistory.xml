@@ -48,4 +48,6 @@
 <fullyQualifiedTypeName name="com.oop.body.controller.ActionBody"/>
 <fullyQualifiedTypeName name="com.oop.body.model.Head"/>
 <fullyQualifiedTypeName name="com.oop.body.model.Leg"/>
+<fullyQualifiedTypeName name="kh.java.polymorphism.animal.Flyable"/>
+<fullyQualifiedTypeName name="kh.java.polymorphism.animal.Eagle"/>
 </qualifiedTypeNameHistroy>
