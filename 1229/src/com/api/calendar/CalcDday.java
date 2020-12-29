@@ -1,4 +1,4 @@
-package com.api.calender;
+package com.api.calendar;
 
 import java.util.Calendar;
 import java.util.Scanner;
