@@ -3,7 +3,6 @@
 <fullyQualifiedTypeName name="emp.model.vo.Employee"/>
 <fullyQualifiedTypeName name="product.model.vo.Product"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="com.kh.function.Example"/>
 <fullyQualifiedTypeName name="com.kh.test.condition.Test1"/>
 <fullyQualifiedTypeName name="com.kh.test.condition.Test2"/>
@@ -21,7 +20,6 @@
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="kh.java.test.array.Test1"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="com.kh.test.nested.loop.Test1"/>
 <fullyQualifiedTypeName name="com.oop.emp.model.Employee"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
@@ -31,9 +29,7 @@
 <fullyQualifiedTypeName name="com.oop.employee.model.vo.Employee"/>
 <fullyQualifiedTypeName name="com.oop.movie.model.entity.Movie"/>
 <fullyQualifiedTypeName name="java.util.Calendar.Builder"/>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="com.oop.coffee.model.dto.Coffee"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.oop.coffee.controller.CoffeeManager"/>
 <fullyQualifiedTypeName name="kh.java.inherit.shape.Rectangle"/>
 <fullyQualifiedTypeName name="member.model.vo.Member"/>
@@ -50,4 +46,15 @@
 <fullyQualifiedTypeName name="com.oop.body.model.Leg"/>
 <fullyQualifiedTypeName name="kh.java.polymorphism.animal.Flyable"/>
 <fullyQualifiedTypeName name="kh.java.polymorphism.animal.Eagle"/>
+<fullyQualifiedTypeName name="com.api.token.TokenTest"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+<fullyQualifiedTypeName name="com.api.member.model.vo.Member"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="com.api.calender.CalcDday"/>
 </qualifiedTypeNameHistroy>
