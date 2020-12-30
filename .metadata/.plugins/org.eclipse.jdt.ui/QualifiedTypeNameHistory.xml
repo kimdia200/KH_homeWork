@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="emp.model.vo.Employee"/>
-<fullyQualifiedTypeName name="product.model.vo.Product"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="com.kh.function.Example"/>
-<fullyQualifiedTypeName name="com.kh.test.condition.Test1"/>
-<fullyQualifiedTypeName name="com.kh.test.condition.Test2"/>
-<fullyQualifiedTypeName name="com.kh.test.condition.Test3"/>
-<fullyQualifiedTypeName name="com.kh.test.condition.Test4"/>
-<fullyQualifiedTypeName name="com.kh.test.condition.Test5"/>
 <fullyQualifiedTypeName name="com.kh.test.random.RandomTest"/>
 <fullyQualifiedTypeName name="com.kh.test.condition.Test8"/>
 <fullyQualifiedTypeName name="com.kh.test.condition.Test9"/>
@@ -54,7 +45,19 @@
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="com.api.calender.CalcDday"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="com.exception.charcheck.CharCheckException"/>
+<fullyQualifiedTypeName name="com.exception.charcheck.Run"/>
+<fullyQualifiedTypeName name="com.exception.charcheck.CharacterProcess"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="com.exception.number.Run"/>
+<fullyQualifiedTypeName name="com.exception.number.NumberProcess"/>
+<fullyQualifiedTypeName name="com.exception.number.NumberRangeException"/>
+<fullyQualifiedTypeName name="java.lang.Number"/>
+<fullyQualifiedTypeName name="com.exception.rnd.NumberOk"/>
+<fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>
