@@ -79,7 +79,7 @@ public class Member {
 	public String information() {
 		long mills = birth.getTimeInMillis();
 		Date date = new Date(mills);
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd");
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 		
 		return "회원번호 : "+memberNo+", 이름 : "+memberName + ", 키 : "+height+", 몸무게 : "+weight+", 생일 : "+format.format(date);
 	}

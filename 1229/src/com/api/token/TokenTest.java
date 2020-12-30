@@ -29,5 +29,4 @@ public class TokenTest {
 		System.out.println("↓↓↓cahr[]을 다시 String으로 바꾼뒤 모두 대문자로 변환하여 출력한값 ↓↓↓");
 		System.out.printf("%30s",temp);
 	}
-
 }
