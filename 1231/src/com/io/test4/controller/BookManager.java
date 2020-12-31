@@ -82,7 +82,7 @@ public class BookManager {
 				}
 			}catch (EOFException e) {
 //				5. "books.dat 읽기 완료!" 출력
-				System.out.println("파일 읽어오기 완료");
+				System.out.println("book.dat 읽기 완료!");
 			}catch (IOException | ClassNotFoundException e) {//멀티 캐치절 버티컬바 하나인거 메모
 				e.printStackTrace();
 			}
