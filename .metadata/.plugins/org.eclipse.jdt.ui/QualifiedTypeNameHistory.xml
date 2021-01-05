@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="kh.java.test.array.Test1"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="com.kh.test.nested.loop.Test1"/>
-<fullyQualifiedTypeName name="com.oop.emp.model.Employee"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="com.oop.method.static_.StaticMethod"/>
-<fullyQualifiedTypeName name="com.oop.method.nonstatic.NonStaticSample"/>
-<fullyQualifiedTypeName name="com.oop.method.Test"/>
-<fullyQualifiedTypeName name="com.oop.employee.model.vo.Employee"/>
 <fullyQualifiedTypeName name="com.oop.movie.model.entity.Movie"/>
 <fullyQualifiedTypeName name="java.util.Calendar.Builder"/>
 <fullyQualifiedTypeName name="com.oop.coffee.model.dto.Coffee"/>
@@ -51,7 +41,6 @@
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
@@ -60,4 +49,15 @@
 <fullyQualifiedTypeName name="com.io.test4.run.TestBookManager"/>
 <fullyQualifiedTypeName name="com.io.test4.model.vo.Book"/>
 <fullyQualifiedTypeName name="com.io.test4.controller.BookManager"/>
+<fullyQualifiedTypeName name="com.collection.list.music.controller.MusicManager"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.collection.list.music.model.vo.Music"/>
+<fullyQualifiedTypeName name="java.util.Objects"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="com.collection.list.music.model.vo.MusicSingerAscending"/>
+<fullyQualifiedTypeName name="com.collection.list.music.model.vo.MusicTitleAscending"/>
 </qualifiedTypeNameHistroy>
