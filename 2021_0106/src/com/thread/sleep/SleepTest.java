@@ -22,7 +22,7 @@ public class SleepTest {
 		s[6]="간에 붙었다 쓸개에 붙었다 한다.";
 		s[7]="간에 기별도 안간다";
 		s[8]="간이 콩알만해지다.";
-		s[8]="갈수록 태산";
+		s[9]="갈수록 태산";
 		
 		for(int i=0; i<10; i++) {
 			int ran=(int)(Math.random()*10);
