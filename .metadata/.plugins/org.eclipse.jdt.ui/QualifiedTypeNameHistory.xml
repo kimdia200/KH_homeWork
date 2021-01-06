@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.oop.body.model.Head"/>
-<fullyQualifiedTypeName name="com.oop.body.model.Leg"/>
 <fullyQualifiedTypeName name="kh.java.polymorphism.animal.Flyable"/>
 <fullyQualifiedTypeName name="kh.java.polymorphism.animal.Eagle"/>
 <fullyQualifiedTypeName name="com.api.token.TokenTest"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="com.collection.map.member.MemberTest"/>
+<fullyQualifiedTypeName name="com.thread.sleep.SleepTest"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>
