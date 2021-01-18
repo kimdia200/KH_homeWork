@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
-<fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
-<fullyQualifiedTypeName name="com.io.test4.run.TestBookManager"/>
-<fullyQualifiedTypeName name="com.io.test4.model.vo.Book"/>
-<fullyQualifiedTypeName name="com.io.test4.controller.BookManager"/>
-<fullyQualifiedTypeName name="com.collection.list.music.controller.MusicManager"/>
-<fullyQualifiedTypeName name="com.collection.list.music.model.vo.Music"/>
-<fullyQualifiedTypeName name="java.util.Objects"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="com.collection.list.music.model.vo.MusicSingerAscending"/>
@@ -60,4 +52,12 @@
 <fullyQualifiedTypeName name="ncs.test10.Sales"/>
 <fullyQualifiedTypeName name="ncs.test10.Company"/>
 <fullyQualifiedTypeName name="ncs.test10.Secretary"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="ncs.test7.ScoreFrame"/>
+<fullyQualifiedTypeName name="java.awt.Font"/>
+<fullyQualifiedTypeName name="javax.swing.JTextField"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="ncs.test7.ScoreFrame.ActionHandler"/>
 </qualifiedTypeNameHistroy>
