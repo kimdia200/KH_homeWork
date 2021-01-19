@@ -16,7 +16,6 @@ public class ScoreFrame extends JFrame{
 	private JTextField sqlScore;
 	private JTextField total;
 	private JTextField average;
-	private JButton calcBtn;
 	
 
 	public ScoreFrame() {
@@ -41,7 +40,7 @@ public class ScoreFrame extends JFrame{
 		sqlScore = new JTextField();
 		total = new JTextField();
 		average = new JTextField();
-		calcBtn = new JButton("계산하기");
+		JButton calcBtn = new JButton("계산하기");
 		
 		t1.setBounds(10, 70, 40, 20);
 		javaScore.setBounds(50, 70, 110, 20);
@@ -68,10 +67,8 @@ public class ScoreFrame extends JFrame{
 		add(title);
 		setVisible(true);
 	}
-
-
+	
 	class ActionHandler implements ActionListener{
-
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			int java = Integer.parseInt(javaScore.getText());
@@ -80,6 +77,5 @@ public class ScoreFrame extends JFrame{
 			total.setText(String.valueOf(java+sql));
 			average.setText(String.valueOf((java+sql)/2));
 		}
-		
 	}
 }
