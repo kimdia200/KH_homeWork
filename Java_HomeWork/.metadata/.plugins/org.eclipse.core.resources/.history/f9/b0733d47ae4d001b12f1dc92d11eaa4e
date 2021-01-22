@@ -1,0 +1,14 @@
+package com.io.test2;
+
+public class TestMyNote {
+
+	public static void main(String[] args) {
+		//1.menu메서드 실행함
+		TestMyNote.menu();
+	}
+	
+	public static void menu() {
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.io.test2;
+
+public class TestMyNote {
+
+	public static void main(String[] args) {
+		//1.menu메서드 실행함
+		TestMyNote.menu();
+	}
+	
+	//2.public static void menu()작성
+	public static void menu() {
+		//2.1 MyNote클래스 객체 생성함
+		MyNote note = new MyNote();
+		//2.2 아래 내용이 콘솔에 출력되게함
+		//2.3 키보드 입력용 객체 생성함
+	}
+
+}

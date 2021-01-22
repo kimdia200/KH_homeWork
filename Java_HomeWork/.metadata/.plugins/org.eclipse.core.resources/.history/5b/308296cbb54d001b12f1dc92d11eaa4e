@@ -1,0 +1,118 @@
+package com.io.test2;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class MyNote {
+	private Scanner sc = new Scanner(System.in);
+
+	public MyNote() {
+		super();
+	}
+
+	public void fileSave() {
+//		1. "파일에 저장할 내용을 입력하시오"  출력
+		System.out.println("파일에 저장할 내용을 입력하시오");
+//		2. StringBuilder 를 사용하여 문자열을 반복해서 입력받아 추가함
+		StringBuilder sb = new StringBuilder();
+		while (true) {
+			String s = sc.nextLine();
+
+//		3. "exit" 입력되면 반복 종료함
+			if (s.equals("exit"))
+				break;
+			sb.append(s+"\n");
+		}
+//		4. "저장하시겠습니까? (y/n) : " 출력
+		System.out.print("저장하시겠습니까? (y/n) : ");
+		if (!(sc.nextLine().equalsIgnoreCase("Y"))) {
+			System.out.println("이전메뉴로 돌아감");
+			return;
+		}
+//		5. 입력값이 대소문자 상관없이 'Y' 이면, "저장할 파일명 : " 출력
+		System.out.print("저장할 파일명 : ");
+//		6. 파일명 입력받아, 해당 파일에 출력 기록함.
+		File dest = new File(sc.nextLine());
+		try (
+				BufferedWriter bw = new BufferedWriter(new FileWriter(dest));) {
+			String data = sb.toString();
+			char[] arr = data.toCharArray();
+			bw.write(arr);
+//		7. "oooo.txt 파일에 성공적으로 저장하였습니다." 출력
+			System.out.println(dest+"파일에 성공적으로 저장하였습니다.");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			System.out.println("이전메뉴로 돌아감");
+//		8. 스트림 반납하고 리턴함 (자동)
+		}
+	}
+
+	public void fileOpen() {
+//		1. "열기할 파일명 : " 출력하고, 파일명 입력받음
+		System.out.print("열기할 파일명 : ");
+		File of = new File(sc.nextLine()); 
+//		2. 파일 입력 스트림 생성
+		try(
+			BufferedReader br = new BufferedReader(
+					new FileReader(of));
+		){
+			String temp = null;
+//		3. 파일의 내용을 한 줄씩 읽어서 화면에 출력함
+			while ((temp=br.readLine())!=null) {
+				System.out.println(temp);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			//에러 보고싶을때만 주석 해제
+		}finally {
+			System.out.println("이전메뉴로 돌아감");
+//		4. 스트림 반납하고 리턴 자동			
+		}
+	}
+
+	public void fileAppend() {
+		//1. "수정할 파일명 : " 출력하고, 파일명 입력받음
+		System.out.print("수정할 파일명 : ");
+		String fn = sc.nextLine();
+		File inF = new File(fn);
+		File outF = new File(fn+1);
+		//2. 파일 입력 스트림 생성
+		//3. 파일 출력 스트림 생성 : 단, 기존 내용 둔 상태로 생성할 것
+		try(
+				BufferedReader br = new BufferedReader(
+						new FileReader(inF));
+				BufferedWriter bw = new BufferedWriter(
+						new FileWriter(outF));
+		){
+			//4. 파일의 내용을 읽어서 화면출력.
+			String temp =null;
+			StringBuilder sb = new StringBuilder();
+			while ((temp=br.readLine())!=null) {
+				System.out.println(temp);
+				sb.append(temp+"\n");
+			}
+			//5. "파일에 추가할 내용을 입력하시오." 출력하고, 추가할 내용을 StringBuilder에 저장하기.
+			while (true) {
+				String s = sc.nextLine();
+
+				if (s.equals("exit"))
+					//7. "exit" 입력하면 반복 종료함
+					break;
+				sb.append(temp+"\n");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		//8. "저장하시겠습니까? (y/n) : " 출력
+		//9. 입력값이 대소문자 상관없이 'Y' 이면, 해당 파일에 출력 기록함.
+		//10. "ooo.txt 파일의 내용이 변경되었습니다." 출력
+		//11. 스트림 반납하고 리턴함
+	}
+
+}
