@@ -22,7 +22,7 @@ from employee;
     ex) 송은희   1963    0
 */
 select emp_name 직원명,
-        substr(emp_no,1,2) 년생,
+        '19'||substr(emp_no,1,2) 년생,
         nvl(bonus, 0) 보너스
 from employee
 where substr(emp_no,1,2) >= '60' and substr(emp_no,1,2) < '70';
@@ -65,7 +65,6 @@ select emp_id 사원번호,
             when substr(emp_no, 8,1) in ('1','3') then '남'
             else '여'
             end 성별,
-        
             to_char(sysdate+ to_yminterval('+01-00'), 'yyyy')-
             case
                 when substr(emp_no, 8,1) in ('1','2') then '19'||substr(emp_no,1,2)
@@ -73,6 +72,7 @@ select emp_id 사원번호,
                 end 현재나이
 from employee;
 
+desc employee;
 /*
 7. 직원명, 직급코드, 연봉(원) 조회
   단, 연봉은 ￦57,000,000 으로 표시되게 함
@@ -91,7 +91,8 @@ select emp_id 사번,
         dept_code 부서코드,
         hire_date 입사일
 from employee
-where hire_date between to_date('2004/01/01','yyyy/mm/dd') and to_date('2004/12/31','yyyy/mm/dd') and dept_code in ('D5','D9');
+where to_char(hire_date, 'yyyy') = '2004';
+--where hire_date between to_date('2004/01/01','yyyy/mm/dd') and to_date('2004/12/31','yyyy/mm/dd') and dept_code in ('D5','D9');
 /*
 9. 직원명, 입사일, 오늘까지의 근무일수 조회 
     * 주말도 포함 , 소수점 아래는 버림
@@ -163,6 +164,7 @@ select sum(
         ) "전체직원수(재직중)",
         count(*) 전체직원수
 from employee;
+
 /*
 12.  부서코드가 D5이면 총무부, D6이면 기획부, D9이면 영업부로 처리하시오.(case 사용)
    단, 부서코드가 D5, D6, D9 인 직원의 정보만 조회하고, 부서코드 기준으로 오름차순 정렬함.
