@@ -1,5 +1,7 @@
 package _1;
 
+import java.util.Arrays;
+
 public class Exam04 {
 
 	static Person[] clone(Person[] a) {
@@ -13,16 +15,7 @@ public class Exam04 {
 	}
 
 	static boolean compareEquality(Person[] a1, Person[] a2) {
-		boolean flag = true;
-
-		if (!(a1.length == a2.length))
-			return false;
-		for (int i = 0; i < a1.length; i++) {
-			if (a1[i].equals(a2[i]) == false) {
-				return false;
-			}
-		}
-		return true;
+		return Arrays.equals(a1, a2);
 	}
 
 	public static void main(String[] args) {
