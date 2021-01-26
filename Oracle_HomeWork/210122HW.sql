@@ -31,18 +31,15 @@ select *
 from tbl_files;
 
 --문제2 답안
-select fileno, substr(filepath, instr(filepath,'\',-1,1)+1)
+select fileno, substr(filepath, instr(filepath,'\',-1)+1)
 from tbl_files;
-
+/*
 substr(filepath, 어디부터 시작할지)
 
 어디부터 시작할지 index
 
 instr('c:\documents\resume.hwp', '\', -1, 1)
-
-
-
-
+*/
 
 
 
