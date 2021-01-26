@@ -14,8 +14,18 @@ public class Example04 {
 //    	return sb.toString();
     	
 //    	방법2
-    	String temp = s.toString();
-    	return temp.replaceAll("o", "").replaceAll("O", "");
+//    	String temp = s.toString();
+//    	return temp.replaceAll("o", "").replaceAll("O", "");
+    	
+    	
+//    	방법3
+    	String temp="";
+    	for (int i = 0; i < s.length(); i++) {
+			if(s.charAt(i)=='o' || s.charAt(i)=='O')
+				continue;
+			temp+=s.charAt(i);
+		}
+    	return temp;
     }
 
     public static void main(String[] args) {
