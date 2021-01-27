@@ -58,10 +58,16 @@ where professor_name not like '___'; --이름 세글자가 아닌사람은 두�
 --(교수중 2000년 이후 출생자는 없다)
 
 select professor_name 교수이름,
-        EXTRACT(year from sysdate)-('19'||substr(professor_ssn,1,2)) 나이
+        trunc(months_between(
+            sysdate, 
+            ('19'|| substr(professor_ssn,1,6))
+        ) / 12) 만나이
 from tb_professor
 order by 2;
 
+select *
+from tb_professor
+where professor_name = '제상철';
 
 --4. 교수들의 이름 중 성을 제외한 이름만 출력하는 SQL문장을 작성하시오,
 --출력 헤더는'이름'이 찍히도록한다 (성이 2자인 경우는 없다고 가정)
