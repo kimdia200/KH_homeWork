@@ -63,7 +63,7 @@ select professor_name 교수이름,
             ('19'|| substr(professor_ssn,1,6))
         ) / 12) 만나이
 from tb_professor
-order by 2;
+order by 만나이;
 
 select *
 from tb_professor
