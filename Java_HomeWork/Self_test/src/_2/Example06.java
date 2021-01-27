@@ -10,9 +10,12 @@ public class Example06 {
 	}
 
 	static String[] split2(String s) {
+		//방법1
+//		String[] temp = s.split("[, ]+");
+		//방법2
 		String[] temp = s.split("[,]");
 		for (int i = 0; i < temp.length; i++) {
-			temp[i] = temp[i].toUpperCase().trim();
+			temp[i] = temp[i].trim();
 		}
 		return temp;
 	}
