@@ -87,3 +87,53 @@ from tb_department;
 select student_no 학번, student_name 이름, student_ssn 주민번호
 from tb_student
 where absence_yn = 'N' and extract(year from entrance_date) = 2002 and student_address like '전주%';
+
+
+--join문제
+--11번. 학번/ 학생명 / 담당교수명 조회
+--1. 중복 없는 학생 수 --588
+select distinct(student_no)
+from tb_student;
+--2. 교수 배정을 받지 않은 학생 조회 --9
+select count(*)
+from tb_student
+where coach_professor_no is null;
+
+--3. 전체 교수수 --전체 교수 수 -114
+select count(professor_no)
+from tb_professor;
+--4. 담당 학생이 한명도 없는 교수 조회 -1
+select count(distinct coach_professor_no)
+from tb_student;
+
+
+--두테이블 조회시, 담당교수, 담당학생이 배정되지 않은 학생이나 교수 제외
+--inner join시
+--예상 튜플수 588-9 = 579
+select *
+from tb_student s join tb_professor p
+    on s.coach_professor_no = p.professor_no;
+
+--두테이블 조회시, 담당교수가 배정되지 않은 학생도 포함
+--left join시
+--예상 튜플 수 579+9
+select *
+from tb_student s left join tb_professor p
+    on s.coach_professor_no = p.professor_no;
+
+--담당학생이 없는 교수 포함
+--right join시
+--예상 튜플 수 579+1 = 580
+select *
+from tb_student s right join tb_professor p
+    on s.coach_professor_no = p.professor_no;
+
+--모두 포함
+--full join시
+--예상 튜플 수 579+9+1 = 589
+select *
+from tb_student s full join tb_professor p
+    on s.coach_professor_no = p.professor_no;
+
+
+
