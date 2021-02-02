@@ -122,14 +122,17 @@ select emp_name 사원명,
             from department
             where dept_id = e.dept_code
            ) 부서명,
-           (salary+(salary*nvl(bonus,0)))*12
+           (salary+(salary*nvl(bonus,0)))*12 연봉,
+           ee.직급별평균연봉 직급별평균연봉
 from employee e join (
                                     select job_code 직급,
                                               avg((salary+(salary*nvl(bonus,0)))*12) 직급별평균연봉
                                     from employee
                                     group by job_code
                                     )ee on e.job_code = ee.직급
-where (salary+(salary*nvl(bonus,0)))*12 < ee.직급별평균연봉;
+where (salary+(salary*nvl(bonus,0)))*12 < ee.직급별평균연봉
+    and substr(e.emp_no,8,1) in ('2','4')
+order by 사원명;
            
         
 
