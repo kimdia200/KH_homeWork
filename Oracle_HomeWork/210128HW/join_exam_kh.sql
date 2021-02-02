@@ -30,21 +30,24 @@ select e.emp_id 사번, e.emp_name 사원명,
 from employee e, department d , job j
 where e.dept_code = d.dept_id
         and e.job_code = j.job_code
-        and e.emp_id = 
-        (select emp_id
-        from employee
-        where 
-            extract(year from sysdate)-
-            case
-               when substr(emp_no,8,1) in ('1','2') then substr(emp_no,1,2)+1900
-               else substr(emp_no,1,2)+2000
-               end+1 = 
-               (select min(extract(year from sysdate)-case
-               when substr(emp_no,8,1) in ('1','2') then substr(emp_no,1,2)+1900
-           else substr(emp_no,1,2)+2000
-           end+1)
-            from employee));
-
+        and e.emp_id = (
+                                select emp_id
+                                from employee
+                                where extract(year from sysdate)-
+                                    case
+                                    when substr(emp_no,8,1) in ('1','2') then substr(emp_no,1,2)+1900
+                                    else substr(emp_no,1,2)+2000
+                                    end+1 = (
+                                                    select min(extract(year from sysdate)-
+                                                        case
+                                                        when substr(emp_no,8,1) in ('1','2') then substr(emp_no,1,2)+1900
+                                                        else substr(emp_no,1,2)+2000
+                                                        end+1)
+                                                    from employee
+                                                    )
+                                );
+--3번 강사님 해답
+--최소나이(min 이용)를 구하는 한줄짜리 테이블을 만들고 그 한줄을 cross조인한뒤 min값과 현재나이가 같으면 출력하셨음
 
 --4. 이름에 '형'자가 들어가는 직원들의 사번, 사원명, 부서명을 조회하시오.
 select emp_id 사번, emp_name 사원명, dept_title 부서명

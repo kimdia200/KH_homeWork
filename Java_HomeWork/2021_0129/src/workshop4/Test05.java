@@ -9,9 +9,9 @@ public class Test05 {
 		for(int i=num; i<=10; i++) {
 			if(i%3!=0 && i%5!=0) {
 				if(sum==0)
-					System.out.print(i);
+					System.out.print(i+"+");
 				else
-					System.out.print("+"+i);
+					System.out.print(i);
 				sum+=i;
 			}
 		}
