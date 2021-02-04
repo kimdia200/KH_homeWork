@@ -6,6 +6,7 @@
 --* MEMBER_ADDR (varchar2(100)) - NULL값 허용금지                    -- 회원 거주지
 --* GENDER (char(3)) - '남' 혹은 '여'로만 입력 가능             -- 성별
 --* PHONE(char(11)) - NULL 값 허용금지                   -- 회원 연락처
+--drop table ex_member;
 create table ex_member(
     member_code number,
     member_id varchar2(20),
@@ -14,9 +15,9 @@ create table ex_member(
     member_addr varchar2(100) not null,
     gender char(3),
     phone char(11) not null,
-    constraint ex_m_code primary key (member_code),
-    constraint ex_m_id unique(member_id),
-    constraint ex_m_gender check(gender in ('남', '여'))
+    constraint pk_ex_m_code primary key (member_code),
+    constraint uq_ex_m_id unique(member_id),
+    constraint ck_ex_m_gender check(gender in ('남', '여'))
 );
 
 --제약조건 검사
@@ -35,11 +36,12 @@ where uc.table_name = 'EX_MEMBER';
 --(참조키를 다시 기본키로 사용할 것.)
 --* MEMBER_CODE(NUMBER) - 외래키(EX_MEMBER의 기본키를 참조), 중복금지       -- 회원전용코드
 --* MEMBER_NICKNAME(varchar2(100)) - 필수                       -- 회원 이름
+--drop table ex_member_nickname;
 create table ex_member_nickname(
     member_code number,
     member_nickname varchar2(100) not null,
-    constraint fk_member_id foreign key(member_code) references ex_member(member_code),
-    constraint pk__member_id primary key(member_code)
+    constraint fk_ex_m_n_id foreign key(member_code) references ex_member(member_code),
+    constraint pk_ex_m_n_id primary key(member_code)
 );
 
 --제약조건 검사
