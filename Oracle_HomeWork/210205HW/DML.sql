@@ -66,8 +66,21 @@ update tb_student
 set student_ssn = substr(student_ssn,1,6);
 
 
-
-
+--7. 의학과 김명훈 학생은 2005 년 1 학기에 자신이 수강한 '피부생리학' 점수가
+--잘못되었다는 것을 발견하고는 정정을 요청하였다.
+--담당 교수의 확인 받은 결과 해당 과목의 학점을 3.5 로 변경키로 결정되었다. 적절한 SQL 문을 작성하시오.
+update tb_grade
+set point = '3.5'
+where student_no in(
+                                select student_no
+                                from tb_student
+                                where student_name = '김명훈'
+                                    and department_no = (
+                                                                        select department_no
+                                                                        from tb_department
+                                                                        where department_name = '의학과'
+                                                                        )
+                                );
 
 
 
