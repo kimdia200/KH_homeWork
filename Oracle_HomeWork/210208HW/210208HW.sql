@@ -18,20 +18,28 @@ create table tb_number(
     reg_date date default sysdate,
     constraint pk_tb_number_id primary key(id)
 );
-
+commit;
+rollback;
 declare
     rnd number;
-
+    summ number:=0;
 begin
     for n in 1..100 loop
         rnd := trunc(dbms_random.value(0,1000));
+        summ := summ+rnd;
         insert into tb_number (id, num)
         values (seq_tb_number_no.nextval, rnd);
+        dbms_output.put_line(summ);
         
     end loop;
-
+    
 end;
 /
 
+select sum(num)
+from tb_number;
+
 select *
 from tb_number;
+
+desc tb_number;
