@@ -32,7 +32,8 @@ begin
         dbms_output.put_line(summ);
         
     end loop;
-    
+    --트랜잭션처리(추가)
+    commit;
 end;
 /
 
