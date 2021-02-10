@@ -1,5 +1,5 @@
 과제 제출 주소
-httpsgithub.comkimdia200KH_classTimetreemasterjdbc_workSpace01_PreparedStatementsrc
+https://github.com/kimdia200/KH_classTime/tree/master/jdbc_workSpace/01_PreparedStatement/src
 
 과제 내용(수업시간에 못한 부분 채워넣기)
 @실습문제
