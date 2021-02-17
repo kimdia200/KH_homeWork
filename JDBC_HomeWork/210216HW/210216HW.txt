@@ -1,3 +1,5 @@
+과제 제출 주소 : https://github.com/kimdia200/KH_classTime/tree/master/jdbc_workSpace/02_Service_JDBCTemplate
+
 ##@실습문제
 회원정보변경 서브메뉴를 제공해서 처리하세요
 ****** 회원 정보 변경 메뉴******
