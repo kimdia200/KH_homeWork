@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>210222HW</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <label for="name">1. 납품자명(필수) : </label>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+            <label for="email">2. email(필수) : </label>
+            <input type="email" name="email" id="email" required placeholder="answer@naver.com">
+            <br><br>
+            <label for="homepage">3. 홈페이지 : </label>
+            <input type="url" name="homepage" id="homepage" value="http://">
+            <br><br>
+            <label for="location">4. 지역 : </label>
+            <select name="location" id="location">
+                <option value="부산" selected="selected">부산</option>
+                <option value="서울">서울</option>
+                <option value="대전">대전</option>
+                <option value="대구">대구</option>
+            </select>
+        </fieldset>
+        
+        <br>
+        <fieldset>
+            <legend>납품 정보</legend>
+            <ul>
+                <li>상품명(필수) : <input type="text" name="p_name" id="p_name" required></li>
+                <br>
+                <li>납품수량(필수) : <input type="number" name="p_num" id="p_num" min="100" required></li>
+                <br>
+                <li>납품등급(필수) : <input type="range" name="p_grade" id="p_grade" min="1" max="10" value="5"></li>
+                <br>
+                <li>기타사항 : <textarea name="etc" id="etc" cols="20" rows="2"></textarea></li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="send message">
+    </form>
+</body>
+</html>
