@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>210224HW_1_수업시간도중 실습문제</title>
+  </head>
+  <body>
+    <!-- @실습문제 : text-shadow -->
+    <!-- div#bg>span#ts$.common{HTML5}*4 -->
+    <div id="bg">
+      <span id="ts1" class="common">HTML5</span><br />
+      <span id="ts2" class="common">HTML5</span><br />
+      <span id="ts3" class="common">HTML5</span><br />
+      <span id="ts4" class="common">HTML5</span><br />
+    </div>
+    <style>
+      div {
+        background-color: black;
+        font-size: 80px;
+        font-weight: bold;
+      }
+      span#ts1 {
+        color: red;
+        text-shadow: 3px 3px 1px yellow;
+      }
+      span#ts2 {
+        color: white;
+        text-shadow: 0px 0px 30px;
+      }
+      span#ts3 {
+        color: white;
+        text-shadow: 0px 0px 20px green;
+      }
+      span#ts4 {
+        text-shadow: 0px 1px rgb(255, 166, 0), 0px -3px 3px rgb(255, 166, 0),
+          0px -8px 10px rgb(255, 166, 0);
+      }
+    </style>
+  </body>
+</html>
