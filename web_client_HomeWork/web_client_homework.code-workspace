@@ -1,10 +1,13 @@
 {
-	"folders": [
-		{
-			"path": "01_HTML_HOMEWORK"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "01_HTML_HOMEWORK"
-	}
+  "folders": [
+    {
+      "path": "01_HTML_HOMEWORK"
+    },
+    {
+      "path": "02_CSS_HOMEWORK"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "02_CSS_HOMEWORK"
+  }
 }
