@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: separate;
+        margin: auto;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+      tfoot td {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        margin: 0;
+        color: blue;
+        font-size: 30px;
+        font-weight: 900;
+      }
+      #thead {
+        background-color: red;
+        color: white;
+      }
+      #tbody {
+        background-color: yellow;
+        text-align: center;
+      }
+      .btn {
+        background-color: green;
+        color: white;
+        height: 30px;
+        width: 50px;
+        font-weight: 900;
+        font-size: 15px;
+        margin: 0;
+      }
+      #tfoot {
+        background-color: tomato;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="title">KH 요가학원</p>
+    <table>
+      <thead id="thead">
+        <tr>
+          <th></th>
+          <th>담당강사</th>
+          <th>기간</th>
+          <th>시간</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr>
+          <td rowspan="6">요가</td>
+          <td rowspan="2">홍길순</td>
+          <td rowspan="2">1개월권</td>
+          <td>
+            <strong>월,수,금</strong> 2시간씩 <button class="btn">신청</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>화,목</strong> 2시간씩 <button class="btn">신청</button>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">김말녀</td>
+          <td rowspan="2">2개월권</td>
+          <td>
+            <strong>월,수,금</strong> 2시간씩 <button class="btn">신청</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>화,목</strong> 2시간씩 <button class="btn">신청</button>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">강개순</td>
+          <td rowspan="2">3개월권</td>
+          <td>
+            <strong>월,수,금</strong> 2시간씩 <button class="btn">신청</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>토, 일</strong> 3시간씩 <button class="btn">신청</button>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot id="tfoot">
+        <tr>
+          <td colspan="4">
+            <strong>곧 모집 마감! 서둘러서 신청해주세요</strong>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

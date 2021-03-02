@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: separate;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+      #require {
+        resize: none;
+      }
+      form {
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="test.do" method="GET">
+      <fieldset>
+        <legend>제품주문</legend>
+        <table>
+          <tr>
+            <th>* 주문자명</th>
+            <td>
+              <input
+                type="text"
+                name="userName"
+                id="userName"
+                placeholder="이름을 입력하시오"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>* 비밀번호</th>
+            <td>
+              <input
+                type="userPwd"
+                name="userPwd"
+                id="userPwd"
+                placeholder="비밀번호 입력하시오."
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>* 제품수량</th>
+            <td>
+              <input
+                type="number"
+                name="amount"
+                id="amount"
+                value="0"
+                min="0"
+                max="10"
+              />
+              <label for="amount">개</label>
+            </td>
+          </tr>
+          <tr>
+            <th>배송시 요청사항</th>
+            <td>
+              <textarea
+                name="require"
+                id="require"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" value="주문" />
+        <input type="reset" value="초기화" />
+      </fieldset>
+    </form>
+  </body>
+</html>

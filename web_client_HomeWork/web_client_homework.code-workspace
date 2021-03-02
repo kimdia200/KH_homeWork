@@ -5,9 +5,12 @@
     },
     {
       "path": "02_CSS_HOMEWORK"
+    },
+    {
+      "path": "정기평가"
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "02_CSS_HOMEWORK"
+    "liveServer.settings.multiRootWorkspaceName": "정기평가"
   }
 }
