@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      체크박스(체크박스를 라디오 버튼처럼 사용하기 / 전체선택 or 전체해제)
+    </title>
+  </head>
+
+  <body>
+    <div align="center">
+      <h2>사은품 선택</h2>
+      <form>
+        <table>
+          <!-- 라디오처럼 동작하는 체크박스 -->
+          <tr>
+            <td class="title">종류</td>
+            <td>
+              <!-- this는 자기자신을 가리킨다. -->
+              <input
+                type="checkbox"
+                name="product"
+                id="product1"
+                value="product1"
+                onclick="onlyOne(this)"
+              /><label for="product1">메인보드</label>&nbsp;
+              <input
+                type="checkbox"
+                name="product"
+                id="product2"
+                value="product2"
+                onclick="onlyOne(this)"
+              /><label for="product2">모니터</label>&nbsp;
+              <input
+                type="checkbox"
+                name="product"
+                id="product3"
+                value="product3"
+                onclick="onlyOne(this)"
+              /><label for="product3">프린터</label>&nbsp;
+              <input
+                type="checkbox"
+                name="product"
+                id="product4"
+                value="product4"
+                onclick="onlyOne(this)"
+              /><label for="product4">하드디스크</label>&nbsp;
+              <input
+                type="checkbox"
+                name="product"
+                id="product5"
+                value="product5"
+                onclick="onlyOne(this)"
+              /><label for="product5">메모리</label>&nbsp;
+              <input
+                type="checkbox"
+                name="product"
+                id="product6"
+                value="product6"
+                onclick="onlyOne(this)"
+              /><label for="product6">CPU</label>&nbsp;
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script>
+      function onlyOne(chk) {
+        var idx;
+        var bool = chk.checked;
+        var arrBox = document.getElementsByName("product");
+        for (var i = 0; i < arrBox.length; i++) {
+          if (arrBox[i].id == chk.id) {
+            idx = i;
+            break;
+          }
+        }
+
+        for (var i = 0; i < arrBox.length; i++) {
+          arrBox[i].checked = false;
+        }
+
+        arrBox[idx].checked = bool;
+      }
+    </script>
+  </body>
+</html>

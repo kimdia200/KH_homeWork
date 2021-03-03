@@ -7,10 +7,13 @@
       "path": "02_CSS_HOMEWORK"
     },
     {
-      "path": "정기평가"
+      "path": "210302_Test"
+    },
+    {
+      "path": "03_JS_HOMEWORK"
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "정기평가"
+    "liveServer.settings.multiRootWorkspaceName": "03_JS_HOMEWORK"
   }
 }
