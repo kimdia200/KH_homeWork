@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>@실습문제3</title>
+  </head>
+  <body>
+    <h2>@실습문제3</h2>
+    <fieldset>
+      <legend>검색할 항목을 선택하세요.</legend>
+      <input
+        type="radio"
+        name="category"
+        value="title"
+        onclick="showDiv1();"
+        id="title"
+      /><label for="title">제목</label>&nbsp; &nbsp;
+      <input
+        type="radio"
+        name="category"
+        value="date"
+        onclick="showDiv1();"
+        id="date"
+      /><label for="date">날짜</label>&nbsp; &nbsp;
+      <input
+        type="radio"
+        name="category"
+        value="writer"
+        onclick="showDiv1();"
+        id="writer"
+      /><label for="writer">작성자</label>&nbsp; &nbsp;
+    </fieldset>
+    <hr />
+    <div id="titleBox" class="boxes">
+      <form method="post" action="">
+        <label> 검색할 제목을 입력하세요 : </label>
+        <br />
+        <input type="search" name="title" size="50" /> &nbsp;
+        <input type="submit" value="검색" />
+      </form>
+    </div>
+    <div id="dateBox" class="boxes">
+      <form method="post" action="">
+        <label> 검색할 날짜를 선택하세요 : </label>
+        <br />
+        <input type="date" name="start" /> -
+        <input type="date" name="end" /> &nbsp;
+        <input type="submit" value="검색" />
+      </form>
+    </div>
+    <div id="writerBox" class="boxes">
+      <form method="post" action="">
+        <label> 검색할 작성자 아이디를 입력하세요 : </label>
+        <br />
+        <input type="search" name="writer" size="25" /> &nbsp;
+        <input type="submit" value="검색" />
+      </form>
+    </div>
+    <script type="text/javascript">
+      //요구한 내용을 변수, 연산자, 제어문 등을 사용하여 실행되게 하시오.
+      //제목 체크시, titleBox 만 보여지게
+      //날짜 체크시, dateBox 만 보여지게
+      //작성자 체크시, writerBox 만 보여지게 함
+      var fieldset = document.querySelector("fieldset");
+      fieldset.style.textAlign = "center";
+      fieldset.style.backgroundColor = "lightGray";
+      fieldset.style.width = "400px";
+
+      var boxes = document.getElementsByClassName("boxes");
+      for (var i = 0; i < boxes.length; i++) {
+        boxes[i].style.width = "500px";
+        boxes[i].style.display = "none";
+        boxes[i].style.backgroundColor = "orange";
+        boxes[i].style.padding = "10px";
+      }
+
+      function showDiv1() {
+        for (var i = 0; i < boxes.length; i++) {
+          boxes[i].style.display = "none";
+        }
+
+        var radios = document.getElementsByName("category");
+        for (var i = 0; i < boxes.length; i++) {
+          if (radios[i].checked) {
+            switch (radios[i].id) {
+              case "title":
+                titleBox.style.display = "block";
+                break;
+              case "date":
+                dateBox.style.display = "block";
+                break;
+              case "writer":
+                writerBox.style.display = "block";
+                break;
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
