@@ -14,6 +14,7 @@
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "03_JS_HOMEWORK"
+    "liveServer.settings.multiRootWorkspaceName": "03_JS_HOMEWORK",
+    "liveServer.settings.port": 5502
   }
 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>실습문제_closure1</title>
+  </head>
+  <body>
+    <h4>@실습문제1 : 눈코딩</h4>
+    <!--100-->
+    <button onclick="funcX()();">funcX실행확인</button>
+
+    <!--undi-->
+    <button onclick="funcY()();">funcY 실행확인</button>
+
+    <!--999-->
+    <button onclick="funcY()(999);">funcY 실행확인</button>
+
+    <!--15-->
+    <button onclick="funcZ(3)(5);">funcZ 실행확인</button>
+
+    <!--NaN-->
+    <button onclick="funcZ()(5);">funcZ 실행확인</button>
+
+    <script>
+      //클로져함수의 변수출력
+      var a = 1;
+      var funcX = function () {
+        var a = 100;
+        return function () {
+          console.log(a);
+        };
+      };
+
+      //funcY함수 주의
+      var b = 9;
+      var funcY = function () {
+        var b = 99;
+        return function (b) {
+          console.log(b);
+        };
+      };
+
+      var funcZ = function (k) {
+        return function (num) {
+          console.log(k * num);
+        };
+      };
+    </script>
+
+    <h3>@실습문제2</h3>
+    <p>
+      임의의 숫자를 더해가는 가산기를 만들어보자. 사용자는 input#myadder를 통해
+      값을 입력하고, <br />
+      가산기는 입력값만큼 증가시켜서 alert로 현재까지의 합을 알려주는 프로그램을
+      만드세요
+    </p>
+    가산기 : <input type="number" id="myadder" />
+    <button onclick="addFunc();">실행</button>
+    <script>
+      function mkAddFunc() {
+        sum = 0;
+        return function () {
+          sum += Number(myadder.value);
+          alert(sum);
+        };
+      }
+      var addFunc = mkAddFunc();
+    </script>
+  </body>
+</html>
