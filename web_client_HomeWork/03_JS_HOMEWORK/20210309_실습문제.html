@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>수업도중 실습문제~</title>
+  </head>
+  <body>
+    <h1>@실습문제 - 객체배열</h1>
+    <textarea
+      name="textarea"
+      id="textarea"
+      cols="30"
+      rows="6"
+      style="width: 100%"
+    ></textarea>
+    <input type="button" value="실행" onclick="test1()" />
+    <script>
+      function Member(name, java, oracle, html5, css3, javascript) {
+        this.name = name;
+        this.java = java;
+        this.oracle = oracle;
+        this.html5 = html5;
+        this.css3 = css3;
+        this.javascript = javascript;
+      }
+
+      Member.prototype.getSum = function () {
+        return (
+          this.java + this.oracle + this.html5 + this.css3 + this.javascript
+        );
+      };
+      Member.prototype.getAvg = function () {
+        return Math.round(this.getSum() * 10) / 10 / 5;
+      };
+      Member.prototype.toString = function () {
+        return (
+          "이름=" +
+          this.name +
+          ", java=" +
+          this.java +
+          ", oracle=" +
+          this.oracle +
+          ", html5=" +
+          this.html5 +
+          ", css3=" +
+          this.css3 +
+          ", javascript=" +
+          this.javascript +
+          ", 총점=" +
+          this.getSum() +
+          ", 평점=" +
+          this.getAvg()
+        );
+      };
+
+      function test1() {
+        var members = [
+          new Member("김동현", 90, 56, 56, 45, 34),
+          new Member("홍길동", 45, 76, 34, 33, 56),
+          new Member("유관순", 76, 34, 54, 56, 22),
+        ];
+
+        var str = "";
+        for (var i in members) {
+          console.log("" + members[i]);
+          str += members[i].toString() + "\n";
+        }
+        textarea.innerHTML = str;
+      }
+    </script>
+  </body>
+</html>
