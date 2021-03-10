@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>210310실습문제~</title>
+  </head>
+  <body>
+    <h1>@실습문제 _ 이벤트</h1>
+    <!-- 
+      todo #btn-generate를 클릭하면, 아래 데이터를 javascript객체로 먼저 만들고, 배열로 관리한다.
+      todo 배열을 순회하면서 , button태그를 동적으로 생성한다.
+      todo 생성된 버튼태그를 클릭하면, 각각의 url로 페이지 이동해야한다.
+      
+      버튼 value               이동할 url
+      ---------------------------------------------------------------------------------------------
+      네이버                   https://www.naver.com
+      구글                     https://www.google.com
+      kh                       https://www.iei.or.kr
+      와삼                     https://www.w3schools.com
+    -->
+
+    <!-- button태그로 만든다면 기본타입 : submit 따라서 반드시 타입 설정 -->
+    <button type="button" id="btn-generate">버튼생성</button>
+    <div class="btn-wrapper"></div>
+    <script>
+      document.querySelector("#btn-generate").onclick = function () {
+        //배열선언
+        var arr = [
+          {
+            value: "네이버",
+            url: "https://www.naver.com",
+          },
+          {
+            value: "구글",
+            url: "https://www.google.com",
+          },
+          {
+            value: "kh",
+            url: "https://www.iei.or.kr",
+          },
+          {
+            value: "와삼",
+            url: "https://www.w3schools.com",
+          },
+        ];
+
+        //값을 담아줄 div객체
+        var div = this.nextElementSibling;
+
+        for (var i = 0; i < arr.length; i++) {
+          var btn = document.createElement("button");
+          btn.type = "button";
+          btn.url = arr[i].url;
+          btn.innerText = arr[i].value;
+          btn.onclick = function () {
+            open(this.url, "newWindow");
+          };
+          div.appendChild(btn);
+        }
+      };
+    </script>
+  </body>
+</html>
