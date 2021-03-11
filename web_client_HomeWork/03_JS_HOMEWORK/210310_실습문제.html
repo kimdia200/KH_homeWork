@@ -26,25 +26,17 @@
     <div class="btn-wrapper"></div>
     <script>
       document.querySelector("#btn-generate").onclick = function () {
+        function Web(value, url) {
+          this.value = value;
+          this.url = url;
+        }
+
         //배열선언
-        var arr = [
-          {
-            value: "네이버",
-            url: "https://www.naver.com",
-          },
-          {
-            value: "구글",
-            url: "https://www.google.com",
-          },
-          {
-            value: "kh",
-            url: "https://www.iei.or.kr",
-          },
-          {
-            value: "와삼",
-            url: "https://www.w3schools.com",
-          },
-        ];
+        var arr = [];
+        arr.push(new Web("네이버", "https://www.naver.com"));
+        arr.push(new Web("구글", "https://www.google.com"));
+        arr.push(new Web("kh", "https://www.iei.or.kr"));
+        arr.push(new Web("와삼", "https://www.w3schools.com"));
 
         //값을 담아줄 div객체
         var div = this.nextElementSibling;
@@ -59,6 +51,8 @@
           };
           div.appendChild(btn);
         }
+        //버튼생성은 한번말 될수있도록!~
+        this.onclick = null;
       };
     </script>
   </body>
