@@ -19,7 +19,7 @@
       function testSSN() {
         var str = ssn.value;
 
-        var reg = /\d{6}-\d{7}/;
+        var reg = /\d{6}-[1234]\d{6}/;
         if (reg.test(str)) {
           alert("올바른 주민번호 형식입니다.");
         } else {
