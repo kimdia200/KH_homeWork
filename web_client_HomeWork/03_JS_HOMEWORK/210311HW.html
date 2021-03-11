@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>210311HW 정규표현식</title>
+  </head>
+  <body>
+    <p>
+      1. 다음과 같은 input태그에서 주민번호의 자릿수를 체크하는 정규표현식을
+      작성하라.
+    </p>
+    <label>주민번호 입력 : </label>
+    <input type="text" id="ssn" />
+    <button type="button" onclick="testSSN();">실행확인</button>
+
+    <script>
+      function testSSN() {
+        var str = ssn.value;
+
+        var reg = /\d{6}-\d{7}/;
+        if (reg.test(str)) {
+          alert("올바른 주민번호 형식입니다.");
+        } else {
+          alert("올바른 주민번호 형식\nyymmdd-0000000");
+        }
+      }
+    </script>
+  </body>
+</html>
