@@ -44,11 +44,13 @@
         for (var i = 0; i < arr.length; i++) {
           var btn = document.createElement("button");
           btn.type = "button";
-          btn.url = arr[i].url;
+          //data- 를 붙인 변수를 만들어서 저장하면 dataset을 사용 할 수 있다.
+          btn["data-url"] = arr[i].url;
           btn.innerText = arr[i].value;
           btn.onclick = function () {
-            open(this.url, "newWindow");
+            open(this["data-url"], "newWindow");
           };
+          console.dir(btn);
           div.appendChild(btn);
         }
         //버튼생성은 한번말 될수있도록!~
