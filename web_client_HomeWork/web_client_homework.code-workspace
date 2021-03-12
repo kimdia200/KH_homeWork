@@ -11,10 +11,13 @@
     },
     {
       "path": "03_JS_HOMEWORK"
+    },
+    {
+      "path": "04_JQuery_HOMEWORK"
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "03_JS_HOMEWORK",
+    "liveServer.settings.multiRootWorkspaceName": "04_JQuery_HOMEWORK",
     "liveServer.settings.port": 5502
   }
 }
