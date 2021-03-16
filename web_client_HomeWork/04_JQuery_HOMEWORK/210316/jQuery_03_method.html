@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <title>jQuery_03_method_실습</title>
+    <!--최신 jquery cdn 사용하기-->
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+  </head>
+  <body>
+    <h2>Method1</h2>
+    <script>
+      function add() {}
+    </script>
+
+    제목 : <input type="text" name="title" /> <br />
+    내용 : <input type="text" name="content" /><br />
+    작성자 : <input type="text" name="owner" /><br />
+    <br />
+    <input type="button" value="테이블에 추가" onclick="add()" /> <br /><br />
+    <table border="1">
+      <tr>
+        <td>제목</td>
+        <td>내용</td>
+        <td>작성자</td>
+      </tr>
+    </table>
+
+    <h2>Method2</h2>
+    <script>
+      function add() {
+        var title = $("[name=title]").val();
+        var content = $("[name=content]").val();
+        var owner = $("[name=owner]").val();
+        var str =
+          "<tr><td>" +
+          title +
+          "</td><td>" +
+          content +
+          "</td><td>" +
+          owner +
+          "</td></tr>";
+        $("[border]").append(str);
+      }
+      function addFile() {
+        var $copy = $("[name='f0']").eq(0).clone().css("display", "block");
+        $("div").append($copy);
+      }
+      function delFile() {
+        var $last = $('[name="f0"]').last();
+        $last.remove();
+      }
+    </script>
+
+    <div>
+      <input type="file" name="f0" /> &nbsp;&nbsp;
+      <input type="button" value="추가" onclick="addFile()" />&nbsp;
+      <input type="button" value="삭제" onclick="delFile()" />
+    </div>
+  </body>
+</html>
