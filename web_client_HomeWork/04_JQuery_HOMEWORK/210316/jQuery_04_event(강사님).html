@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery_04_event_실습</title>
+    <!--최신 jquery cdn 사용하기-->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>  
+</head>
+<body>
+    <h2>Practice</h2>
+    <script>
+        $(function(){
+            var len = $("#number").children().length;
+            console.log("length : "+len);
+            $(document).on("mouseenter", "#number", function(){
+                $(this).children().each(function(){
+                    console.log($(this).attr("class"));
+                });
+            });
+        });
+    </script>
+    <ul id="number">
+        <li class="n1">1</li>
+        <li class="n2">2</li>
+        <li class="n3">3</li>
+    </ul>
+
+    <hr>
+
+    <h2>Event 1</h2>
+    <script>
+        $(document).ready(function(){
+            $("select").change(function(){
+                var data = $("select option:selected").html();
+                $("#selNum").text(data);
+            });
+        });
+    </script>
+    
+    <select name="number">
+        <option value="">== 선택 == </option>
+        <option value="1">1번</option>
+        <option value="2">2번</option>
+        <option value="3">3번</option>
+        <option value="4">4번</option>
+    </select>
+    <span id="selNum"></span>
+
+    <hr>
+
+    <h2>Event 2</h2>
+    <script>
+    /**
+     * jquery식 onload 함수 
+     * 1. $(document).ready(function(){});
+     * 2. $(function(){});
+     * 
+     * $("#event2 tr")와 같이 html태그가 DOM에 등록되기 전에 script가 먼저 실행되어서는 안된다.
+     * onload함수를 통해 DOM등록후 실행 될 수 있도록 한다.
+     */ 
+    $(document).ready(function(){
+        $("table#event2 tr").on("click",function(e){
+            //0. 헤더부분은 처리하지 않는다.
+            if($(this).is("table#event2 tr:eq(0)"))
+                return;
+
+            //1.클릭한 요소(이벤트발생객체)의 자식태그들을 가져오기
+            //this | e.target => table#event2 tr
+            var $objectArr = $(this).children(); 
+            // console.log($objectArr); // jquery[0: td, 1: td, 2: td, 3: td]
+
+            //2.jquery객체 순회 -> 상응하는 span태그에 값 작성
+            // $objectArr.each(function(){});
+            $.each($objectArr,function(index, item){
+                // console.log(index, item); //item은 순수js태그요소객체이다.
+                $("span#s" + (index + 1)).html(item.innerHTML);
+            });
+        });
+    });
+    </script>
+    
+    <table id="event2" border="1">
+        <tr><th>번호</th><th>제목</th><th>조회수</th><th>작성일자</th></tr>
+        <tr><td>3</td><td>3번제목</td><td>0</td><td>11-07-13</td></tr>
+        <tr><td>2</td><td>2번제목</td><td>0</td><td>11-07-12</td></tr>
+        <tr><td>1</td><td>1번제목</td><td>0</td><td>11-07-11</td></tr>
+    </table>
+        선택된 행 :
+        <span id="s1"></span> / 
+        <span id="s2"></span> / 
+        <span id="s3"></span> / 
+        <span id="s4"></span>
+
+    <hr>
+    
+    <h2>Event 3</h2>
+    <script>
+    $(document).ready(function(){
+        $("table#event3 tr").on("click",function(){
+            var $this = $(this);//이벤트 발생 tr
+            if($this.is("table#event3 tr:eq(0)"))
+                return;
+            var $objectArr = $this.children();
+            $objectArr.each(function(index,item){
+                //span#s5 ~ span#s8
+                $("span#s" + (index + 5)).html(item.innerHTML);
+            });
+
+            //css처리
+            $("table#event3 tr")
+                .css("background", "white")
+                .filter($this)//동일한 요소만 추려낸다. jquery객체 / js객체 / 선택자 모두 가능
+                .css("background", "red");
+        });
+    });
+    </script>
+
+    <table id="event3" border="1">
+        <tr><th>번호</th><th>제목</th><th>조회수</th><th>작성일자</th></tr>
+        <tr><td>3</td><td>3번제목</td><td>0</td><td>11-07-13</td></tr>
+        <tr><td>2</td><td>2번제목</td><td>0</td><td>11-07-12</td></tr>
+        <tr><td>1</td><td>1번제목</td><td>0</td><td>11-07-11</td></tr>
+    </table>
+        선택된 행 :
+        <span id="s5"></span> / 
+        <span id="s6"></span> / 
+        <span id="s7"></span> / 
+        <span id="s8"></span>
+</body>
+</html>

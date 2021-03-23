@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery_03_method_실습</title>
+	<!--최신 jquery cdn 사용하기-->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>    
+</head>
+<body>
+    <h2>Method1</h2>
+    <script>
+        function add(){
+            var title = $("input:eq(0)").val();
+            var content = $("input:eq(1)").val();
+            var owner = $("input:eq(2)").val();
+            $("tr").last().after("<tr><td>"+title+"</td>"+"<td>"+content+"</td>"+"<td>"+owner+"</td></tr>");
+            $("input:text").val('');
+        }
+        </script>
+    
+    제목 : <input type="text" name="title" /> <br />
+    내용 : <input type="text" name="content" /><br />
+    작성자 : <input type="text" name="owner" /><br /> <br>
+    <input type="button" value="테이블에 추가" onclick="add()" /> <br><br>
+    <table border="1">
+        <tr>
+            <td> 제목 </td>
+            <td> 내용 </td>
+            <td> 작성자 </td>
+        </tr>
+    </table>
+
+    <h2>Method2</h2>
+    <script>
+        var idx = 0;
+        function addFile(){
+            $("input").last().after("<br><br><input type='file' name='f"+ ++idx +"'/>");
+            
+        }
+        function delFile(){
+            //input:file의 최소개수는 1개로 제한.
+            if($("input:file").length>1)
+                $("input").last().remove();
+        }
+        </script>
+    
+    <div>
+        <input type="file" name="f0"/>  &nbsp;&nbsp;
+        <input type="button" value="추가" onclick="addFile()" />&nbsp;
+        <input type="button" value="삭제" onclick="delFile()" />
+    </div>
+
+</body>
+</html>
